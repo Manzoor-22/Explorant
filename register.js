@@ -17,10 +17,11 @@ import { getDatabase, ref, set, get, child} from "https://www.gstatic.com/fireba
   const app = initializeApp(firebaseConfig);
   
   const db = getDatabase(app);
+  const username = document.getElementById("email").value;
 
   document.getElementById("submit").addEventListener('click', function(e){
     e.preventDefault();
-    set(ref(db, 'user/'),{
+    set(ref(db, 'user/'+username),{
         username: document.getElementById("email").value,
         password: document.getElementById("password").value
     });
