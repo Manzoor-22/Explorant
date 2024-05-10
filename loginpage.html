@@ -52,6 +52,7 @@
         <script charset="utf-8" src="./Login - Explorant_files/0.4587d960.chunk.js.download"></script>
         <script charset="utf-8" src="./Login - Explorant_files/1.8bf8f91e.chunk.js.download"></script>
         <script charset="utf-8" src="./Login - Explorant_files/user-login.68a119b3.chunk.js.download"></script>
+        <script type="Module" src="register.js" defer></script>
     </head>
     <body class="ltr background no-footer">
         <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -77,23 +78,23 @@
                                         <a aria-current="page" class="white active" href="https://app.explorant.space/"><span class="logo-single w-100"></span></a>
                                         <div class="mb-4 w-100 d-flex justify-content-between align-item-center card-title">
                                             <div>Login</div>
-                                            <div><a class="text-primary" href="https://app.explorant.space/auth/register">Not Registered?</a></div>
+                                            <div><a class="text-primary" href="./loginpage.html">USE RIOT ID</a></div>
                                         </div>
-                                        <form action="https://app.explorant.space/#" class="av-tooltip tooltip-label-bottom">
+                                        <form class="av-tooltip tooltip-label-bottom">
                                             <div class="form-group has-float-label form-group">
-                                                <label class="">E-mail</label
-                                                ><input name="email" class="form-control" placeholder="Enter Email" value="Manzoormohd.022@gmail.com" />
+                                                <label class="">Riot ID</label
+                                                ><input name="email" class="form-control" placeholder="Enter Email" value="" id="email"/>
                                             </div>
                                             <div class="form-group has-float-label form-group">
                                                 <label class="">Password</label
-                                                ><input name="password" class="form-control" type="password" placeholder="Enter Password" value="12345678" />
+                                                ><input name="password" class="form-control" type="password" placeholder="Enter Password" value="" id="password"/>
                                             </div>
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <a href="https://app.explorant.space/auth/forgot-password">Forget password?</a
-                                                ><button class="btn-shadow btn-multiple-state btn btn-primary btn-lg">
+                                                <a href="./loginpage.html">Forget password?</a
+                                                ><button class="btn-shadow btn-multiple-state btn btn-primary btn-lg" id="submit">
                                                     <span class="spinner d-inline-block"
                                                         ><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></span
-                                                    ><span class="label">LOGIN</span>
+                                                    ><span class="label">SUBMIT</span>
                                                 </button>
                                             </div>
                                         </form>
